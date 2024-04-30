@@ -1,39 +1,18 @@
-@keyframes bgcolor {
-    0% {
-        background-color: #45a3e5
-    }
-
-    30% {
-        background-color: #66bf39
-    }
-
-    60% {
-        background-color: #eb670f
-    }
-
-    90% {
-        background-color: #f35
-    }
-
-    100% {
-        background-color: #864cbf
-    }
-}
-
 body {
-    -webkit-animation: bgcolor 20s infinite;
-    animation: bgcolor 10s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
+    background-color: #25076b;
+    height: 90vh;
+    margin: 0;
 }
-#title{
+
+#title {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 50px;
     color: white;
 }
-#name{
-    width: 50%;
+
+#name {
+    width: 40%;
     padding: 12px 0px;
     margin: 8px 0;
     display: block;
@@ -45,8 +24,9 @@ body {
     font-size: 20px;
     text-align: center;
 }
-#pin{
-    width: 50%;
+
+#pin {
+    width: 40%;
     padding: 12px 0px;
     margin: 8px 0;
     display: block;
@@ -58,22 +38,27 @@ body {
     font-size: 20px;
     text-align: center;
 }
-#label{
+
+#label {
     display: block;
     text-align: center;
     font-size: 25px;
     font-family: 'Raleway', sans-serif;
     color: white;
 }
-#host{
+
+#host {
     color: white;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
-#host:hover{
-    text-decoration:underline;
+
+#host:hover {
+    text-decoration: underline;
 }
-#joinButton{
-    width: 50%;
+
+#joinButton {
+    width: 40%;
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -85,6 +70,25 @@ body {
     margin-right: auto;
     margin-left: auto;
     font-size: 20px;
-    background-color: #3A3B3A;
+    background-color: #2f2f2f;
     font-family: 'Raleway', sans-serif;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+#joinButton:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+#form_inicio {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }

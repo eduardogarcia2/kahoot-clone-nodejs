@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Join | KahootClone</title>
+        <title>Unirse</title>
         <link rel = "stylesheet" href = "css/index.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+    
     <body>
-        <h1 id = "title">Join a Game</h1>
-        <form action="/player/">
+        <h1 id = "title">Únete a un juego</h1>
+        <form action="/player/" id="form_inicio">
                 <div class="form-field">
-                    <label id = "label">Display Name</label>
+                    <label id = "label">Nombre</label>
                     <input id = "name" type = "text" name="name" autofocus/>
                 </div>
                 <br>
                 <div class="form-field">
-                    <label id = "label">Game Pin</label>
+                    <label id = "label">PIN de juego</label>
                     <input id = "pin" type="number" name="pin"/>
                 </div>
                 <br>
                 <div class="form-field">
-                    <button id = "joinButton">Join</button>
+                    <button id = "joinButton">Listo, vamos!</button>
                 </div>
         </form>
         <br/>
-        <center><a href = "/create/" id = "host">Click here to host a Kahoot!</a></center>
+        <center><a href = "/create/" id = "host">¡Haz clic aquí para ser el host de un juego!</a></center>
     </body>
 </html>

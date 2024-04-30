@@ -1,31 +1,11 @@
-@keyframes bgcolor {
-    0% {
-        background-color: #45a3e5
-    }
-
-    30% {
-        background-color: #66bf39
-    }
-
-    60% {
-        background-color: #eb670f
-    }
-
-    90% {
-        background-color: #f35
-    }
-
-    100% {
-        background-color: #864cbf
-    }
-}
-
 body {
-    -webkit-animation: bgcolor 20s infinite;
-    animation: bgcolor 10s infinite;
-    -webkit-animation-direction: alternate;
-    animation-direction: alternate;
+    background-color: #25076b;
+    height: 90vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
+
 #title{
     color:white;
     font-family: 'Raleway', sans-serif;
@@ -48,7 +28,7 @@ body {
 }
 
 #start{
-    background-color: #3A3B3A;
+    background-color: #2f2f2f;
     border: none;
     color: white;
     padding: 15px 100px;
@@ -63,4 +43,54 @@ body {
     margin-right: auto;
     font-size: 25px;
     font-family: 'Raleway', sans-serif;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#start:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+#cancel {
+    background-color: #ce3f3f;
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 2px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease; 
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#cancel:hover {
+    background-color: #9b2f2f;
 }
